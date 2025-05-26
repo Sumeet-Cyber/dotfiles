@@ -1,0 +1,117 @@
+label.module {
+    padding: 0 10px;
+    margin: 1px;
+	border-bottom: 3px solid #ffffff;
+	transition: all 0.3s ease;
+}
+
+label.module:hover {
+	background-color: white;
+	color: rgb(32, 85, 104);
+	border-radius: 3px;
+;
+}
+
+box.module button:hover {
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+* {
+    border: none;
+    border-radius: 0;
+/*    font-family: Roboto, Helvetica, Arial, sans-serif; */
+    font-family: "Iosevka", "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 10px;
+    min-height: 0;
+/*    background: rgba(32, 85, 104, 0.25); */
+}
+
+window#waybar {
+    background: rgba(32, 85, 104, 0.25);
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    color: white;
+}
+
+/* To make Waybar use gtk theme in required in the future just uncomment the below lines */
+
+/*
+window#waybar {
+    background: @theme_base_color;
+    border-bottom: 1px solid @unfocused_borders;
+    color: @theme_text_color;
+}
+
+*/
+tooltip {
+  background: rgba(32, 85, 104, 0.25);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces button {
+    padding: 0 4px;
+    margin: 0 1px;
+    background: transparent;
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 15%;
+}
+
+#workspaces button.active {
+    background-color: white;
+    color: rgb(32, 85, 104);
+}
+/*
+#workspaces button:hover {
+    border-right: 1px solid white;
+}
+*/
+#workspaces button.focused {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+#mode, #clock, #battery {
+    padding: 0 10px;
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+#battery {
+    background-color: #ffffff;
+    color: black;
+	border-radius: 3px;
+
+}
+
+#battery.charging {
+    color: white;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#custom-hyprsunset_toggler {
+	font-size: 15px;
+	padding-bottom: 1px;
+}

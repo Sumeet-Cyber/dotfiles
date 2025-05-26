@@ -1,0 +1,13 @@
+# Returns the current state of the hyprsunset
+
+cur_state=$(cat ~/.config/hypr/use_hyprsunset_or_not)
+
+# Logic
+
+if [ "$cur_state" = "on" ]; then
+	echo "☼"
+else
+	echo "○"
+fi
+
+~/.config/hypr/custom_hyprsunset.conf
