@@ -5,5 +5,5 @@ cur_time=$(date +"%H")
 if [ "$cur_time" -ge 18 ] || [ "$cur_time" -le 7 ]; then
 	~/.config/hypr/hyprsunset_scripts/initialize_hss.sh &
 else
-	echo "off" > ~/.config/hyprhyprsunset_scripts/hyprssCurState
+	echo "off" > ~/.config/hypr/hyprsunset_scripts/hyprssCurState
 fi
