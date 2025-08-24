@@ -10,3 +10,9 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 set mouse=a
+syntax on
+" Enable true color support
+set termguicolors
+
+" Set the wal colorscheme
+colorscheme wal

@@ -11,6 +11,7 @@ PS1='[\u@\h \W]\$ '
 alias vi='nvim'
 alias vim='nvim'
 
+neofetch
 /home/sumeetj/bin/start-my-tlp.sh
 source /home/sumeetj/.custom_commands.sh
 # Adding this alias to manage my configuration dotfiles on various locations (hypr, waybar, .bashrc, etc)
