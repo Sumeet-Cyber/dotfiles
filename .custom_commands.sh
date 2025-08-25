@@ -38,7 +38,7 @@ function setwall() {
 	echo "Moving new wallpaper to the directory...."
 	cp "$wallpaper" "$wallpaper_dir"/wallpaper."$new_wallpaper_ext"
 	echo "Applying new wallpaper settings...."
-	swww img "$wallpaper"
+	swww img "$wallpaper" --transition-type wave --transition-angle 315 --transition-fps 60 --transition-duration 2
 	wal -i "$wallpaper"
 	echo "now restarting the waybar...."
 	pkill waybar && waybar &
