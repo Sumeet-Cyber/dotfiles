@@ -10,8 +10,11 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 alias vi='nvim'
 alias vim='nvim'
+alias code='code --ozone-platform=wayland'
 
-neofetch
+# Run fastfetch at start of any terminal session-
+fastfetch
+
 /home/sumeetj/bin/start-my-tlp.sh
 source /home/sumeetj/.custom_commands.sh
 # Adding this alias to manage my configuration dotfiles on various locations (hypr, waybar, .bashrc, etc)
@@ -24,3 +27,10 @@ export NNN_FCOLORS='0000E6310000000000000000'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Useful for me-
+boult_air='44:06:5F:F7:AA:55'
+sonilex='30:21:62:49:E2:B1'
+
+# Adding this like accordingly what Wasp installer said to do-
+export PATH=$PATH:/home/sumeetj/.local/bin
